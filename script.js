@@ -10,7 +10,8 @@ class previewBoxShadow {
     spread,
     spreadRef,
     boxPreview,
-    rule
+    rule,
+    color
   ) {
     this.horizontal = horizontal;
     this.horizontalRef = horizontalRef;
@@ -22,6 +23,7 @@ class previewBoxShadow {
     this.spreadRef = spreadRef;
     this.boxPreview = boxPreview;
     this.rule = rule;
+    this.color = color;
   }
 
   intializing() {
@@ -34,10 +36,13 @@ class previewBoxShadow {
   }
 
   applyRule() {
-    this.boxPreview.style.boxShadow = `${this.horizontal.value}px ${this.vertical.value}px ${this.blur.value}px ${this.spread.value}px`;
-
+    this.boxPreview.style.boxShadow = `${this.horizontal.value}px ${this.vertical.value}px ${this.blur.value}px ${this.spread.value}px ${this.color.value}`;
     const valueRule = this.boxPreview.style.boxShadow;
     this.rule.textContent = valueRule;
+  }
+
+  setColor(value) {
+    this.color.value = value;
   }
 
   updateValue(type, value) {
@@ -68,9 +73,14 @@ const blur = document.querySelector("#blur");
 const blurRef = document.querySelector("#blur-value");
 const spread = document.querySelector("#spread");
 const spreadRef = document.querySelector("#spread-value");
-// box
+
+// seletor de cor
+const color = document.querySelector("#color-value");
+
+//box
 const boxPreview = document.querySelector("#box");
-// rule
+
+//rule
 const rule = document.querySelector("#rule span");
 
 //instanciado obj
@@ -84,7 +94,8 @@ const boxShadow = new previewBoxShadow(
   spread,
   spreadRef,
   boxPreview,
-  rule
+  rule,
+  color
 );
 
 boxShadow.intializing();
@@ -112,4 +123,9 @@ spread.addEventListener("input", (e) => {
   const value = e.target.value;
 
   boxShadow.updateValue("spread", value);
+});
+
+color.addEventListener("input", (e) => {
+  const value = e.target.value;
+  boxShadow.setColor(value);
 });

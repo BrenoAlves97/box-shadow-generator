@@ -91,7 +91,7 @@ h2 {
 
 #generated-rule {
   width: 100%;
-  max-width: 550px;
+  max-width: 700px;
   margin: 2rem auto;
   text-align: center;
   padding: 3rem;
@@ -101,4 +101,24 @@ h2 {
 
 #generated-rule p {
   margin: 2rem;
+}
+
+/* Color - input */
+
+.form-control-color {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #3d3d3de8;
+  background: #c2c2c234;
+  border: 3px solid #ceed0731;
+}
+
+.form-control-color label {
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control-color input[type="color"] {
+  cursor: pointer;
 }
