@@ -1,7 +1,4 @@
-# box-shadow-generator 
-Interaja com os inputs, e gere um valor para a propriedade CSS: box-shadow.
-
-# Projeto - Gerador de box shadow: 
+# Gerador de box shadow: 
 - O usuário poderá interagir com os inputs, e ao gerar o valor, além de visualizar o resultado na box preview, poderá copiar a regra e aplicar no seu arquivo CSS.
 
 # Tecnologias utilizadas: 
