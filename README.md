@@ -5,10 +5,8 @@
 - HTML
 - CSS 
 - JavaScript
-- DOM 
 
 # Link para acesso: 
 - https://generator-bs.netlify.app/
 
-# Layout: 
 ![image](https://user-images.githubusercontent.com/100312812/210677787-f82d8a8e-7634-47f5-b543-cff134e0e2f4.png)
