@@ -7,9 +7,6 @@
 - JavaScript
 - DOM 
 
-# Deploy: 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6233d73c-440f-4a0d-83c1-ea6506628c7b/deploy-status)](https://app.netlify.com/sites/generator-bs/deploys)
-
 # Link para acesso: 
 - https://generator-bs.netlify.app/
 
